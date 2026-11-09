@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>胡顺杰 · 个人主页</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+       background:#0d1117;color:#c9d1d9;line-height:1.7}
+  a{color:#58a6ff;text-decoration:none}
+  /* 头部 */
+  header{background:linear-gradient(135deg,#161b22 0%,#0d1117 100%);
+         padding:70px 20px 50px;text-align:center;border-bottom:1px solid #30363d}
+  header h1{font-size:40px;margin:0 0 12px;color:#f0f6fc;letter-spacing:3px}
+  header .sub{font-size:18px;color:#8b949e;margin:0 0 16px}
+  header .tags{font-size:13px;color:#58a6ff}
+  header .tags span{border:1px solid #30363d;border-radius:20px;padding:4px 14px;margin:0 5px;display:inline-block}
+  .container{max-width:960px;margin:40px auto;padding:0 20px}
+  .section-title{color:#f0f6fc;font-size:24px;margin:50px 0 22px;
+                 border-left:4px solid #58a6ff;padding-left:14px}
+  /* 卡片通用 */
+  .card{background:#161b22;border:1px solid #30363d;border-radius:12px;
+        padding:24px;margin-bottom:18px;transition:all .3s ease}
+  .card:hover{border-color:#58a6ff;transform:translateY(-4px);
+              box-shadow:0 6px 24px rgba(0,0,0,.5)}
+  /* 简介 */
+  .profile{display:flex;gap:24px;align-items:center}
+  .avatar{width:90px;height:90px;background:#21262d;border:2px solid #58a6ff;border-radius:50%;
+          display:flex;align-items:center;justify-content:center;font-size:36px;color:#58a6ff;flex-shrink:0}
+  .profile p{margin:0;color:#8b949e;font-size:14px}
+  /* 教育 */
+  .edu-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap}
+  .edu-head h3{margin:0;color:#f0f6fc;font-size:18px}
+  .edu-head .time{color:#8b949e;font-size:13px}
+  .edu-meta{margin:8px 0 0;color:#8b949e;font-size:14px}
+  .hl{color:#3fb950;font-weight:600}
+  /* 项目 */
+  .proj-title{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+  .proj-title h3{margin:0;color:#f0f6fc;font-size:18px}
+  .badge{font-size:12px;color:#0d1117;background:#58a6ff;border-radius:6px;padding:2px 10px;font-weight:600;flex-shrink:0}
+  .badge.alt{background:#3fb950}
+  .proj-meta{color:#8b949e;font-size:13px;margin:4px 0 12px}
+  .proj p{margin:0 0 8px;font-size:14px}
+  .proj .lab{color:#58a6ff;font-weight:600}
+  .awards{color:#d29922}
+  /* 技能 */
+  .skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .skill-grid h3{margin:0 0 8px;color:#f0f6fc;font-size:17px}
+  .skill-grid p{margin:0;font-size:14px;color:#8b949e}
+  /* 获奖 */
+  .honor-list{display:flex;flex-wrap:wrap;gap:12px}
+  .honor-list div{background:#161b22;border:1px solid #30363d;border-radius:10px;
+                  padding:12px 16px;font-size:14px;flex:1 1 calc(50% - 12px)}
+  .honor-list .lv{font-size:12px;color:#d29922;font-weight:600}
+  .honor-list .lv.nat{color:#f85149}
+  footer{text-align:center;padding:40px 20px;border-top:1px solid #30363d;
+         color:#8b949e;font-size:13px;margin-top:60px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>胡顺杰</h1>
+  <p class="sub">机械设计制造及其自动化 · 智能机器人方向</p>
+  <div class="tags">
+    <span>🎓 保研 中科院自动化所</span>
+    <span>🏆 国家奖学金</span>
+    <span>🥇 竞赛国家级二等奖</span>
+    <span>📍 重庆彭水</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- 个人简介 -->
+  <h2 class="section-title">个人简介</h2>
+  <div class="card profile">
+    <div class="avatar">胡</div>
+    <div>
+      <p style="font-size:15px;color:#c9d1d9;margin:0 0 8px">
+        西南大学机械设计制造及其自动化专业本科生，综合排名 <span class="hl">3 / 85</span>，GPA <span class="hl">3.6 / 5</span>。
+        已保研至 <span class="hl">中国科学院大学自动化研究所</span>（控制理论与控制工程，研究方向：智能机器人）。
+      </p>
+      <p style="margin:0 0 8px">专注于智能农机装备与机器人机构设计，熟练掌握 SolidWorks 建模、Python 算法仿真与 MATLAB 数据分析。曾获国家奖学金及多项国家级、省级竞赛奖项。</p>
+      <p style="margin:0">📞 18717091860 &nbsp;&nbsp; ✉️ <a href="mailto:18717091860@163.com">18717091860@163.com</a></p>
+    </div>
+  </div>
+
+  <!-- 教育背景 -->
+  <h2 class="section-title">教育背景</h2>
+  <div class="card">
+    <div class="edu-head">
+      <h3>中国科学院大学 · 自动化研究所</h3>
+      <span class="time">2027.09 – 2030.06</span>
+    </div>
+    <p class="edu-meta">控制理论与控制工程（<span class="hl">保研</span>） ｜ 研究方向：智能机器人</p>
+  </div>
+  <div class="card">
+    <div class="edu-head">
+      <h3>西南大学 · 机械设计制造及其自动化</h3>
+      <span class="time">2023.09 – 至今</span>
+    </div>
+    <p class="edu-meta">GPA 3.6 / 5 ｜ 综合排名 <span class="hl">3 / 85</span> ｜ 英语 CET-6（464）</p>
+    <p class="edu-meta">主修课程：计算方法（96）、电子电工技术（91）、控制理论与控制工程（88）</p>
+  </div>
+
+  <!-- 项目经历 -->
+  <h2 class="section-title">项目经历</h2>
+
+  <div class="card proj">
+    <div class="proj-title">
+      <h3>视觉自适应低损伤淡水鱼一体化初加工装备</h3>
+      <span class="badge">负责人</span>
+    </div>
+    <p class="proj-meta">智能农机装备研发 ｜ 2025.11 – 2026.05</p>
+    <p><span class="lab">项目概述：</span>针对小白条人工加工低效、通用设备损伤率高的行业痛点，研发全自动初加工杀鱼机，集成五大核心工序，柔性智能加工、高效低损、紧凑适配，填补小型鱼专用加工设备空白。</p>
+    <p><span class="lab">本人工作：</span>主导整机研发，采用 SolidWorks 完成整机建模、虚拟装配与干涉检查，制定加工工艺并主导关键零件加工与装配调试，保障设备顺利落地成型。</p>
+    <p class="awards">🏅 全国大学生智能农机装备大赛 国家级二等奖（本人排名第一） ｜ 全国大学生机械创新设计大赛 省级一等奖</p>
+  </div>
+
+  <div class="card proj">
+    <div class="proj-title">
+      <h3>工业机器人全流程作业系统</h3>
+      <span class="badge alt">核心成员</span>
+    </div>
+    <p class="proj-meta">工业自动化系统研发 ｜ 2025.03 – 2025.06</p>
+    <p><span class="lab">项目概述：</span>针对罐装饮品自动化作业需求，研发专用夹具与机器人控制系统，实现物料夹取、搬运、识别、开盖、分装及回收全流程作业。</p>
+    <p><span class="lab">本人工作：</span>负责专用夹具机械结构设计与参数化三维建模，完成机器人运动控制程序编写、精准点位示教标定及动作调试，保障夹具与机器人协同作业精准、稳定、高效。</p>
+    <p class="awards">🏅 全国三维数字化创新设计大赛 省级一等奖</p>
+  </div>
+
+  <div class="card proj">
+    <div class="proj-title">
+      <h3>马铃薯授粉机器人末端作业系统</h3>
+      <span class="badge">负责人</span>
+    </div>
+    <p class="proj-meta">机器人末端设计与运动控制仿真 ｜ 2026.09 – 至今</p>
+    <p><span class="lab">项目概述：</span>针对马铃薯花序授粉场景，设计柔性末端执行器，并结合 Python 脚本进行运动学仿真与数据处理，验证末端作业路径的可行性与稳定性。</p>
+    <p><span class="lab">本人工作：</span>负责末端执行器结构设计与运动学建模，推导正逆运动学方程；编写 Python 脚本构建简化模型，模拟末端轨迹并分析碰撞风险与作业盲区；熟悉传感器与执行器硬件接口，设计机电协同逻辑，为视觉识别与路径规划算法提供硬件约束支持。</p>
+  </div>
+
+  <!-- 工作技能 -->
+  <h2 class="section-title">工作技能</h2>
+  <div class="skill-grid">
+    <div class="card"><h3>SolidWorks / AutoCAD</h3><p>可独立完成参数化建模、工程图设计、多体运动学仿真与非线性静力学分析。</p></div>
+    <div class="card"><h3>Python</h3><p>具备编程与逻辑思维，能独立编写脚本解决工程问题，实现数据处理与计算自动化。</p></div>
+    <div class="card"><h3>MATLAB</h3><p>熟练完成多体运动学仿真、智能路径优化与工程数据处理分析。</p></div>
+  </div>
+
+  <!-- 获奖经历 -->
+  <h2 class="section-title">获奖经历</h2>
+  <div class="honor-list">
+    <div><span class="lv nat">国家级</span> ｜ 2025-2026 学年 国家奖学金</div>
+    <div><span class="lv nat">国家级</span> ｜ 国际大学生智能农业装备创新大赛 二等奖</div>
+    <div><span class="lv nat">国家级</span> ｜ 全国大学生先进成图大赛 三等奖</div>
+    <div><span class="lv nat">国家级</span> ｜ 全国大学生周培源力学竞赛 优秀奖</div>
+    <div><span class="lv">省级</span> ｜ 全国大学生机械创新设计大赛 一等奖</div>
+    <div><span class="lv">省级</span> ｜ 全国三维数字化创新设计大赛 一等奖</div>
+    <div><span class="lv">省级</span> ｜ 全国大学生数学竞赛 二等奖</div>
+    <div><span class="lv">校级</span> ｜ 西南大学三好学生 / 二等奖学金</div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 胡顺杰 · 机械设计制造及其自动化 ｜ 保研 中国科学院大学自动化研究所</p>
+</footer>
+
+</body>
+</html>
